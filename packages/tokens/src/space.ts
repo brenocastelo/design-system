@@ -14,6 +14,6 @@ export const space = {
   40: '10rem',
   64: '16rem',
   80: '20rem',
-};
+}
 
 // 1rem -> 16px -> 16px/4 -> Size 4
