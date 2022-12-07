@@ -1,0 +1,12 @@
+{
+  "name": "ignite-design-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
