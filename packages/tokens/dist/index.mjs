@@ -24,8 +24,8 @@ var fonts = {
 
 // src/font-sizes.ts
 var fontSizes = {
-  xxs: "0.625rem",
   xs: "0.75rem",
+  xxs: "0.625rem",
   sm: "0.875rem",
   md: "1rem",
   lg: "1.125rem",
