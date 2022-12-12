@@ -2,11 +2,18 @@
   "name": "ignite-design-system",
   "version": "1.0.0",
   "main": "index.js",
-  "private": "true",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.6.3"
+  }
 }
