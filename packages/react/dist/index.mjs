@@ -115,35 +115,13 @@ var {
   }
 });
 
-// src/index.tsx
-var Button = styled("button", {
-  backgroundColor: "$ignite300",
-  fontFamily: "$default",
-  fontWeight: "$bold",
-  borderRadius: "$sm",
-  height: "$10",
-  border: 0,
-  color: "$white",
-  cursor: "pointer",
-  "&:hover": {
-    backgroundColor: "$ignite500"
-  },
-  variants: {
-    size: {
-      small: {
-        fontSize: "$sm",
-        padding: "$2 $4"
-      },
-      large: {
-        fontSize: "$md",
-        padding: "$3 $6"
-      }
-    }
-  },
-  defaultVariants: {
-    size: "small"
-  }
+// src/components/Box.tsx
+var Box = styled("div", {
+  padding: "$4",
+  borderRadius: "$md",
+  backgroundColor: "$gray800",
+  border: "1px solid $gray600"
 });
 export {
-  Button
+  Box
 };
