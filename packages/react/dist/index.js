@@ -3030,11 +3030,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx2 = jsxWithValidationDynamic;
-        var jsxs2 = jsxWithValidationStatic;
+        var jsx3 = jsxWithValidationDynamic;
+        var jsxs3 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx2;
-        exports.jsxs = jsxs2;
+        exports.jsx = jsx3;
+        exports.jsxs = jsxs3;
       })();
     }
   }
@@ -3059,7 +3059,8 @@ __export(src_exports, {
   Box: () => Box,
   Button: () => Button,
   Heading: () => Heading,
-  Text: () => Text
+  Text: () => Text,
+  TextInput: () => TextInput
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -3330,13 +3331,68 @@ var Button = styled("button", {
     size: "md"
   }
 });
+
+// src/components/TextInput/styles.ts
+var TextInputContainer = styled("div", {
+  backgroundColor: "$gray900",
+  borderRadius: "$sm",
+  border: "2px solid $gray900",
+  padding: "$3 $4",
+  boxSizing: "border-box",
+  display: "flex",
+  alignItems: "baseline",
+  "&:has(input:focus)": {
+    borderColor: "$ignite500"
+  },
+  "&:has(input:disabled)": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  }
+});
+var Input = styled("input", {
+  backgroundColor: "transparent",
+  border: 0,
+  color: "$white",
+  fontFamily: "$default",
+  fontWeight: "$regular",
+  fontSize: "$sm",
+  width: "100%",
+  "&:focus": {
+    outline: 0
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
+var Prefix = styled("span", {
+  color: "$gray400",
+  fontSize: "$sm",
+  fontWeight: "$regular",
+  fontFamily: "$default"
+});
+
+// src/components/TextInput/index.tsx
+var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+function TextInput(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(TextInputContainer, { children: [
+    !!props.prefix && /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Prefix, { children: [
+      props.prefix,
+      " "
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({}, props))
+  ] });
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
   Button,
   Heading,
-  Text
+  Text,
+  TextInput
 });
 /**
  * @license React
