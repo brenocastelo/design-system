@@ -31,3 +31,5 @@ export const AvatarFallback = styled(Avatar.Fallback, {
     width: '$6',
   },
 });
+
+AvatarContainer.displayName = 'Avatar';

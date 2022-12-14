@@ -47,3 +47,5 @@ export const Prefix = styled('span', {
   fontWeight: '$regular',
   fontFamily: '$default',
 });
+
+Input.displayName = 'Input';
