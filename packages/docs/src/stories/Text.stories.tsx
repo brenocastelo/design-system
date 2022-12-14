@@ -7,6 +7,29 @@ export default {
   args: {
     children:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, nisi suscipit. Placeat sapiente, amet, laborum facere sed at illo explicabo obcaecati necessitatibus cumque similique voluptate fuga quod nemo perspiciatis eveniet?',
+    size: 'md',
+  },
+  argTypes: {
+    size: {
+      options: [
+        'xxs',
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+        '2xl',
+        '4xl',
+        '5xl',
+        '6xl',
+        '7xl',
+        '8xl',
+        '9xl',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
   },
 } as Meta<TextProps>;
 
