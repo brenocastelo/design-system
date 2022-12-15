@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, Checkbox, CheckboxProps, Text } from '@ignite-ui/react';
+import { Box, Checkbox, CheckboxProps, Text } from '@br-ignite-ui/react';
 import { StoryFnReactReturnType } from '@storybook/react/dist/ts3.9/client/preview/types';
 
 export default {

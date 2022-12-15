@@ -1,4 +1,4 @@
-import { Box, Text, TextInput, TextInputProps } from '@ignite-ui/react';
+import { Box, Text, TextInput, TextInputProps } from '@br-ignite-ui/react';
 import { Meta, StoryObj } from '@storybook/react';
 import { StoryFnReactReturnType } from '@storybook/react/dist/ts3.9/client/preview/types';
 
