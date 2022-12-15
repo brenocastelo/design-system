@@ -1,4 +1,4 @@
-name: Deploy Docs
+name: Publish packages
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
@@ -34,11 +34,5 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           TURBO_TOKEN: ${{ secrets.VERCEL_UI_TOKEN }}
           TURBO_TEAM: brenocastelo
-
-      - name: Deploy Storybook
-        working-directory: ./packages/docs
-        run: yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
-        env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
         
         
