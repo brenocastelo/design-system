@@ -1,0 +1,2 @@
+import{A as t}from"./index-195889f5.js";import"./index-46b65b01.js";import"./iframe-6a2d7a08.js";import"./index-c9dda752.js";import"./jsx-runtime-f926e2be.js";const e={title:"Data display/Avatar",component:t,argTypes:{src:{control:{type:"text"}}}},i={args:{src:"https://github.com/brenocastelo.png",alt:"Breno Castelo Branco"}},p={args:{src:void 0}},n=["Primary","WithFallback"];export{i as Primary,p as WithFallback,n as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories-710aab7c.js.map
