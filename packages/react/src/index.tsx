@@ -8,3 +8,4 @@ export * from './components/TextArea';
 export * from './components/Checkbox';
 export * from './components/Multistep';
 export * from './components/Tooltip/index';
+export * from './components/Toast/index';
